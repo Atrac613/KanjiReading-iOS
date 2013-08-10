@@ -2,16 +2,16 @@ WORKSPACE = KanjiReading.xcworkspace
 SCHEME = KanjiReading
 
 clean:
-	xcodebuild \
+	xctool \
 		-workspace $(WORKSPACE) \
 		-scheme $(SCHEME) \
 		clean
 
 test:
-	xcodebuild \
+	xctool \
 		-workspace $(WORKSPACE) \
 		-scheme $(SCHEME) \
-		-sdk iphonesimulator \
-		-configuration Debug \
-		TEST_AFTER_BUILD=YES \
-		ONLY_ACTIVE_ARCH=NO
+		ONLY_ACTIVE_ARCH=NO \
+		build \
+		test \
+		-test-sdk iphonesimulator6.0
