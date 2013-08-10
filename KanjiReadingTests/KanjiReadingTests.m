@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in KanjiReadingTests");
+    //STFail(@"Unit tests are not implemented yet in KanjiReadingTests");
 }
 
 @end

@@ -4,7 +4,7 @@ Kanji reading app.
 
 ## Code Status
 
-* [![Build Status](https://api.travis-ci.org/Atrac613/KanjiReading.png)](https://travis-ci.org/Atrac613/KanjiReading)
+* [![Build Status](https://api.travis-ci.org/Atrac613/KanjiReading-iOS.png)](https://travis-ci.org/Atrac613/KanjiReading-iOS)
 
 ## Special Thanks
 
