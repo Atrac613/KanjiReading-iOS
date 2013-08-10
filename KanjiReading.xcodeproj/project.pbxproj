@@ -28,6 +28,12 @@
 		0682E39E17B6399A00286F59 /* handwriting-ja.model in Resources */ = {isa = PBXBuildFile; fileRef = 0682E39D17B6399A00286F59 /* handwriting-ja.model */; };
 		0682E3A017B63D4E00286F59 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0682E39F17B63D4E00286F59 /* libstdc++.dylib */; };
 		0682E3A317B63D7700286F59 /* libzinnia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0682E39517B6370400286F59 /* libzinnia.a */; };
+		06C224BD17B6723900CE7F1E /* kanji_reading.db in Resources */ = {isa = PBXBuildFile; fileRef = 06C224BC17B6723900CE7F1E /* kanji_reading.db */; };
+		06C224C117B6762400CE7F1E /* ATBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C224C017B6762400CE7F1E /* ATBaseDao.m */; };
+		06C224CD17B6798F00CE7F1E /* ATKanjiReadingDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C224CC17B6798F00CE7F1E /* ATKanjiReadingDao.m */; };
+		06C224D017B6799700CE7F1E /* ATKanjiReading.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C224CF17B6799700CE7F1E /* ATKanjiReading.m */; };
+		06C224D117B67F7200CE7F1E /* kanji_reading.db in Resources */ = {isa = PBXBuildFile; fileRef = 06C224BC17B6723900CE7F1E /* kanji_reading.db */; };
+		06D50C3CAF694635B800F177 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FBBF81E76E417287E3014D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +83,17 @@
 		0682E39A17B638F300286F59 /* HandwritingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandwritingResult.m; sourceTree = "<group>"; };
 		0682E39D17B6399A00286F59 /* handwriting-ja.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = "handwriting-ja.model"; sourceTree = "<group>"; };
 		0682E39F17B63D4E00286F59 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		06C224B817B66A6500CE7F1E /* build_db.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = build_db.py; sourceTree = "<group>"; };
+		06C224B917B66A6500CE7F1E /* joyo2010.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = joyo2010.txt; sourceTree = "<group>"; };
+		06C224BC17B6723900CE7F1E /* kanji_reading.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = kanji_reading.db; sourceTree = "<group>"; };
+		06C224BF17B6762400CE7F1E /* ATBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATBaseDao.h; path = Dao/ATBaseDao.h; sourceTree = "<group>"; };
+		06C224C017B6762400CE7F1E /* ATBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATBaseDao.m; path = Dao/ATBaseDao.m; sourceTree = "<group>"; };
+		06C224CB17B6798F00CE7F1E /* ATKanjiReadingDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATKanjiReadingDao.h; path = Dao/ATKanjiReadingDao.h; sourceTree = "<group>"; };
+		06C224CC17B6798F00CE7F1E /* ATKanjiReadingDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATKanjiReadingDao.m; path = Dao/ATKanjiReadingDao.m; sourceTree = "<group>"; };
+		06C224CE17B6799700CE7F1E /* ATKanjiReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATKanjiReading.h; path = Dto/ATKanjiReading.h; sourceTree = "<group>"; };
+		06C224CF17B6799700CE7F1E /* ATKanjiReading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATKanjiReading.m; path = Dto/ATKanjiReading.m; sourceTree = "<group>"; };
+		19FBBF81E76E417287E3014D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8283441F9BA84AD0B1ED761E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +106,7 @@
 				0682E31D17B6352A00286F59 /* Foundation.framework in Frameworks */,
 				0682E31F17B6352A00286F59 /* CoreGraphics.framework in Frameworks */,
 				0682E3A017B63D4E00286F59 /* libstdc++.dylib in Frameworks */,
+				06D50C3CAF694635B800F177 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +131,7 @@
 				0682E39C17B6399A00286F59 /* Resources */,
 				0682E31917B6352A00286F59 /* Frameworks */,
 				0682E31817B6352A00286F59 /* Products */,
+				8283441F9BA84AD0B1ED761E /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +153,7 @@
 				0682E31C17B6352A00286F59 /* Foundation.framework */,
 				0682E31E17B6352A00286F59 /* CoreGraphics.framework */,
 				0682E34117B6352B00286F59 /* SenTestingKit.framework */,
+				19FBBF81E76E417287E3014D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,6 +161,8 @@
 		0682E32017B6352A00286F59 /* KanjiReading */ = {
 			isa = PBXGroup;
 			children = (
+				06C224C717B6792F00CE7F1E /* Dto */,
+				06C224BE17B6761000CE7F1E /* Dao */,
 				0682E32917B6352A00286F59 /* AppDelegate.h */,
 				0682E32A17B6352A00286F59 /* AppDelegate.m */,
 				0682E33217B6352A00286F59 /* MainStoryboard.storyboard */,
@@ -200,9 +222,32 @@
 			isa = PBXGroup;
 			children = (
 				0682E39D17B6399A00286F59 /* handwriting-ja.model */,
+				06C224BC17B6723900CE7F1E /* kanji_reading.db */,
+				06C224B817B66A6500CE7F1E /* build_db.py */,
+				06C224B917B66A6500CE7F1E /* joyo2010.txt */,
 			);
 			name = Resources;
 			path = KanjiReading/Resources;
+			sourceTree = "<group>";
+		};
+		06C224BE17B6761000CE7F1E /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				06C224CB17B6798F00CE7F1E /* ATKanjiReadingDao.h */,
+				06C224CC17B6798F00CE7F1E /* ATKanjiReadingDao.m */,
+				06C224BF17B6762400CE7F1E /* ATBaseDao.h */,
+				06C224C017B6762400CE7F1E /* ATBaseDao.m */,
+			);
+			name = Dao;
+			sourceTree = "<group>";
+		};
+		06C224C717B6792F00CE7F1E /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				06C224CE17B6799700CE7F1E /* ATKanjiReading.h */,
+				06C224CF17B6799700CE7F1E /* ATKanjiReading.m */,
+			);
+			name = Dto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0682E35217B6352B00286F59 /* Build configuration list for PBXNativeTarget "KanjiReading" */;
 			buildPhases = (
+				C9C03E815BD8473FB903833D /* Check Pods Manifest.lock */,
 				0682E31317B6352A00286F59 /* Sources */,
 				0682E31417B6352A00286F59 /* Frameworks */,
 				0682E31517B6352A00286F59 /* Resources */,
+				7A534D54F38A4DF9A17480F6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C224D117B67F7200CE7F1E /* kanji_reading.db in Resources */,
 				0682E32517B6352A00286F59 /* InfoPlist.strings in Resources */,
 				0682E32D17B6352A00286F59 /* Default.png in Resources */,
 				0682E32F17B6352A00286F59 /* Default@2x.png in Resources */,
@@ -306,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0682E34C17B6352B00286F59 /* InfoPlist.strings in Resources */,
+				06C224BD17B6723900CE7F1E /* kanji_reading.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +374,34 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		7A534D54F38A4DF9A17480F6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		C9C03E815BD8473FB903833D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -337,6 +414,9 @@
 				0682E33717B6352B00286F59 /* MasterViewController.m in Sources */,
 				0682E39817B637A900286F59 /* HandwritingRecognizer.m in Sources */,
 				0682E39B17B638F300286F59 /* HandwritingResult.m in Sources */,
+				06C224C117B6762400CE7F1E /* ATBaseDao.m in Sources */,
+				06C224CD17B6798F00CE7F1E /* ATKanjiReadingDao.m in Sources */,
+				06C224D017B6799700CE7F1E /* ATKanjiReading.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +478,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Osamu Noguchi (BQY439J4V9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Osamu Noguchi (BQY439J4V9)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -411,9 +492,14 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ./zinnia/;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				HEADER_SEARCH_PATHS = (
+					./zinnia/,
+					"./Pods/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "7C97524F-9AFE-41AA-85C5-9D85A78237A4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7C97524F-9AFE-41AA-85C5-9D85A78237A4";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -436,8 +522,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ./zinnia/;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				HEADER_SEARCH_PATHS = (
+					./zinnia/,
+					"./Pods/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -446,22 +535,34 @@
 		};
 		0682E35317B6352B00286F59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8283441F9BA84AD0B1ED761E /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Osamu Noguchi (BQY439J4V9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Osamu Noguchi (BQY439J4V9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KanjiReading/KanjiReading-Prefix.pch";
-				HEADER_SEARCH_PATHS = ./zinnia/;
+				HEADER_SEARCH_PATHS = (
+					./zinnia/,
+					"./Pods/**",
+				);
 				INFOPLIST_FILE = "KanjiReading/KanjiReading-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7C97524F-9AFE-41AA-85C5-9D85A78237A4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7C97524F-9AFE-41AA-85C5-9D85A78237A4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		0682E35417B6352B00286F59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8283441F9BA84AD0B1ED761E /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KanjiReading/KanjiReading-Prefix.pch";
-				HEADER_SEARCH_PATHS = ./zinnia/;
+				HEADER_SEARCH_PATHS = (
+					./zinnia/,
+					"./Pods/**",
+				);
 				INFOPLIST_FILE = "KanjiReading/KanjiReading-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

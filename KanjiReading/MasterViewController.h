@@ -8,21 +8,29 @@
 
 #import <UIKit/UIKit.h>
 #import "HandwritingRecognizer.h"
+#import "ATKanjiReadingDao.h"
 
-@interface MasterViewController : UIViewController {
+@interface MasterViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     IBOutlet UIImageView *canvas;
+    IBOutlet UITableView *tableView;
 	
 	NSOperationQueue *queue;
     CGPoint touchPoint;
 	NSMutableArray *points;
 	HandwritingRecognizer *recognizer;
+    
+    ATKanjiReadingDao *kanji;
+    NSArray *results;
 }
 
-@property (nonatomic, retain) IBOutlet UIImageView *canvas;
-@property (nonatomic, retain) NSOperationQueue *queue;
-@property (nonatomic, assign) CGPoint touchPoint;
-@property (nonatomic, retain) NSMutableArray *points;
-@property (nonatomic, retain) HandwritingRecognizer *recognizer;
+@property (strong, nonatomic) IBOutlet UIImageView *canvas;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSOperationQueue *queue;
+@property (nonatomic) CGPoint touchPoint;
+@property (strong, nonatomic) NSMutableArray *points;
+@property (strong, nonatomic) HandwritingRecognizer *recognizer;
+@property (strong, nonatomic) ATKanjiReadingDao *kanji;
+@property (strong, nonatomic) NSArray *results;
 
 - (IBAction)clearButtonPressed:(id)sender;
 

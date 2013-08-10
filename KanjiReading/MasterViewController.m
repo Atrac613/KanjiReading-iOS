@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "HandwritingResult.h"
+#import "ATKanjiReadingDao.h"
 
 @interface MasterViewController () {
     
@@ -22,6 +23,9 @@
 @synthesize touchPoint;
 @synthesize points;
 @synthesize recognizer;
+@synthesize kanji;
+@synthesize tableView;
+@synthesize results;
 
 - (void)awakeFromNib
 {
@@ -32,9 +36,15 @@
 {
     [super viewDidLoad];
     
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Clear" style:UIBarButtonItemStylePlain target:self action:@selector(clearButtonPressed:)];
+    
+    [self.navigationItem setTitle:@"Kanji Reading"];
+    
     self.queue = [[NSOperationQueue alloc] init];
 	[queue setMaxConcurrentOperationCount:1];
 	self.recognizer = [[HandwritingRecognizer alloc] initWithCanvas:canvas];
+    
+    self.kanji = [[ATKanjiReadingDao alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,6 +61,9 @@
 	[queue cancelAllOperations];
 	
 	canvas.image = nil;
+    
+    results = nil;
+    [tableView reloadData];
 }
 
 #pragma mark - Touches
@@ -91,17 +104,58 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
 	[queue addOperationWithBlock:^{
         
-		NSArray *results = [recognizer classify:points];
+		NSArray *_results = [recognizer classify:points];
 
 		[[NSOperationQueue mainQueue] addOperationWithBlock:^{
-			if (results) {
-				for (int i = 0; i < [results count]; i++) {
-					HandwritingResult *result = [results objectAtIndex:i];
-                    NSLog(@"%@ (%@)", result.value, result.score);
+			if (_results) {
+                NSMutableArray *tmpArray = [NSMutableArray array];
+                
+				for (int i = 0; i < [_results count]; i++) {
+					HandwritingResult *result = [_results objectAtIndex:i];
+                    
+                    ATKanjiReading *kanjiData = [kanji getData:result.value];
+                    if (kanjiData) {
+                        [tmpArray addObject:kanjiData];
+                    }
 				}
+                
+                if ([tmpArray count]) {
+                    results = [NSArray arrayWithArray:tmpArray];
+                    
+                    [tableView reloadData];
+                }
 			}
 		}];
 	}];
+}
+
+#pragma mark - UITableView Delegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [results count];
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    
+    ATKanjiReading *result = [results objectAtIndex:indexPath.row];
+    
+    NSString *text = [NSString stringWithFormat:@"%@ - %@", result.character, result.reading];
+    
+    [cell.textLabel setText:text];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
