@@ -11,7 +11,7 @@ test:
 	xctool \
 		-workspace $(WORKSPACE) \
 		-scheme $(SCHEME) \
-		ONLY_ACTIVE_ARCH=NO \
+		-sdk iphonesimulator \
+		VALID_ARCHS=i386 \
 		build \
-		test \
-		-test-sdk iphonesimulator6.0
+		test 

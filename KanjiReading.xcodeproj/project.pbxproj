@@ -497,11 +497,12 @@
 					"./Pods/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "7C97524F-9AFE-41AA-85C5-9D85A78237A4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7C97524F-9AFE-41AA-85C5-9D85A78237A4";
 				SDKROOT = iphoneos;
 				TEST_AFTER_BUILD = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -528,10 +529,12 @@
 					"./Pods/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TEST_AFTER_BUILD = YES;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -548,11 +551,12 @@
 					"./Pods/**",
 				);
 				INFOPLIST_FILE = "KanjiReading/KanjiReading-Info.plist";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7C97524F-9AFE-41AA-85C5-9D85A78237A4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7C97524F-9AFE-41AA-85C5-9D85A78237A4";
 				TEST_AFTER_BUILD = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -568,8 +572,10 @@
 					"./Pods/**",
 				);
 				INFOPLIST_FILE = "KanjiReading/KanjiReading-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
