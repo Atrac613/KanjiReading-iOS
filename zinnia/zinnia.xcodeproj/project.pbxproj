@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		130B2C2B12C4F41100444AC7 /* character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C1512C4F41100444AC7 /* character.cpp */; };
+		130B2C2C12C4F41100444AC7 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C1612C4F41100444AC7 /* common.h */; };
+		130B2C2D12C4F41100444AC7 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C1712C4F41100444AC7 /* config.h */; };
+		130B2C2E12C4F41100444AC7 /* feature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C1812C4F41100444AC7 /* feature.cpp */; };
+		130B2C2F12C4F41100444AC7 /* feature.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C1912C4F41100444AC7 /* feature.h */; };
+		130B2C3012C4F41100444AC7 /* freelist.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C1A12C4F41100444AC7 /* freelist.h */; };
+		130B2C3112C4F41100444AC7 /* libzinnia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C1B12C4F41100444AC7 /* libzinnia.cpp */; };
+		130B2C3212C4F41100444AC7 /* mmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C1C12C4F41100444AC7 /* mmap.h */; };
+		130B2C3312C4F41100444AC7 /* param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C1D12C4F41100444AC7 /* param.cpp */; };
+		130B2C3412C4F41100444AC7 /* param.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C1E12C4F41100444AC7 /* param.h */; };
+		130B2C3512C4F41100444AC7 /* recognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C1F12C4F41100444AC7 /* recognizer.cpp */; };
+		130B2C3612C4F41100444AC7 /* scoped_ptr.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C2012C4F41100444AC7 /* scoped_ptr.h */; };
+		130B2C3712C4F41100444AC7 /* sexp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C2112C4F41100444AC7 /* sexp.cpp */; };
+		130B2C3812C4F41100444AC7 /* sexp.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C2212C4F41100444AC7 /* sexp.h */; };
+		130B2C3912C4F41100444AC7 /* stream_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C2312C4F41100444AC7 /* stream_wrapper.h */; };
+		130B2C3A12C4F41100444AC7 /* svm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C2412C4F41100444AC7 /* svm.cpp */; };
+		130B2C3B12C4F41100444AC7 /* svm.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C2512C4F41100444AC7 /* svm.h */; };
+		130B2C3C12C4F41100444AC7 /* trainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C2612C4F41100444AC7 /* trainer.cpp */; };
+		130B2C3D12C4F41100444AC7 /* zinnia_convert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C2712C4F41100444AC7 /* zinnia_convert.cpp */; };
+		130B2C3E12C4F41100444AC7 /* zinnia_learn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C2812C4F41100444AC7 /* zinnia_learn.cpp */; };
+		130B2C3F12C4F41100444AC7 /* zinnia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2C2912C4F41100444AC7 /* zinnia.cpp */; };
+		130B2C4012C4F41100444AC7 /* zinnia.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2C2A12C4F41100444AC7 /* zinnia.h */; };
+		AA747D9F0F9514B9006C5449 /* zinnia_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* zinnia_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		130B2C1512C4F41100444AC7 /* character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = character.cpp; sourceTree = "<group>"; };
+		130B2C1612C4F41100444AC7 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		130B2C1712C4F41100444AC7 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		130B2C1812C4F41100444AC7 /* feature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = feature.cpp; sourceTree = "<group>"; };
+		130B2C1912C4F41100444AC7 /* feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feature.h; sourceTree = "<group>"; };
+		130B2C1A12C4F41100444AC7 /* freelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freelist.h; sourceTree = "<group>"; };
+		130B2C1B12C4F41100444AC7 /* libzinnia.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = libzinnia.cpp; sourceTree = "<group>"; };
+		130B2C1C12C4F41100444AC7 /* mmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmap.h; sourceTree = "<group>"; };
+		130B2C1D12C4F41100444AC7 /* param.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = param.cpp; sourceTree = "<group>"; };
+		130B2C1E12C4F41100444AC7 /* param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = param.h; sourceTree = "<group>"; };
+		130B2C1F12C4F41100444AC7 /* recognizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = recognizer.cpp; sourceTree = "<group>"; };
+		130B2C2012C4F41100444AC7 /* scoped_ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scoped_ptr.h; sourceTree = "<group>"; };
+		130B2C2112C4F41100444AC7 /* sexp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sexp.cpp; sourceTree = "<group>"; };
+		130B2C2212C4F41100444AC7 /* sexp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sexp.h; sourceTree = "<group>"; };
+		130B2C2312C4F41100444AC7 /* stream_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_wrapper.h; sourceTree = "<group>"; };
+		130B2C2412C4F41100444AC7 /* svm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svm.cpp; sourceTree = "<group>"; };
+		130B2C2512C4F41100444AC7 /* svm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svm.h; sourceTree = "<group>"; };
+		130B2C2612C4F41100444AC7 /* trainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trainer.cpp; sourceTree = "<group>"; };
+		130B2C2712C4F41100444AC7 /* zinnia_convert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zinnia_convert.cpp; sourceTree = "<group>"; };
+		130B2C2812C4F41100444AC7 /* zinnia_learn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zinnia_learn.cpp; sourceTree = "<group>"; };
+		130B2C2912C4F41100444AC7 /* zinnia.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zinnia.cpp; sourceTree = "<group>"; };
+		130B2C2A12C4F41100444AC7 /* zinnia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zinnia.h; sourceTree = "<group>"; };
+		130B2E6912C791C800444AC7 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		130B2E6A12C791C800444AC7 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		130B2E6B12C791C800444AC7 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		130B2E6C12C791C800444AC7 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		130B2E6D12C791C800444AC7 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* zinnia_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zinnia_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libzinnia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libzinnia.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libzinnia.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* zinnia */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = zinnia;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				130B2C1512C4F41100444AC7 /* character.cpp */,
+				130B2C1612C4F41100444AC7 /* common.h */,
+				130B2C1712C4F41100444AC7 /* config.h */,
+				130B2C1912C4F41100444AC7 /* feature.h */,
+				130B2C1812C4F41100444AC7 /* feature.cpp */,
+				130B2C1A12C4F41100444AC7 /* freelist.h */,
+				130B2C1B12C4F41100444AC7 /* libzinnia.cpp */,
+				130B2C1C12C4F41100444AC7 /* mmap.h */,
+				130B2C1E12C4F41100444AC7 /* param.h */,
+				130B2C1D12C4F41100444AC7 /* param.cpp */,
+				130B2C1F12C4F41100444AC7 /* recognizer.cpp */,
+				130B2C2012C4F41100444AC7 /* scoped_ptr.h */,
+				130B2C2212C4F41100444AC7 /* sexp.h */,
+				130B2C2112C4F41100444AC7 /* sexp.cpp */,
+				130B2C2312C4F41100444AC7 /* stream_wrapper.h */,
+				130B2C2512C4F41100444AC7 /* svm.h */,
+				130B2C2412C4F41100444AC7 /* svm.cpp */,
+				130B2C2612C4F41100444AC7 /* trainer.cpp */,
+				130B2C2712C4F41100444AC7 /* zinnia_convert.cpp */,
+				130B2C2812C4F41100444AC7 /* zinnia_learn.cpp */,
+				130B2C2A12C4F41100444AC7 /* zinnia.h */,
+				130B2C2912C4F41100444AC7 /* zinnia.cpp */,
+				130B2E6912C791C800444AC7 /* AUTHORS */,
+				130B2E6A12C791C800444AC7 /* ChangeLog */,
+				130B2E6B12C791C800444AC7 /* COPYING */,
+				130B2E6C12C791C800444AC7 /* NEWS */,
+				130B2E6D12C791C800444AC7 /* README */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* zinnia_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* zinnia_Prefix.pch in Headers */,
+				130B2C2C12C4F41100444AC7 /* common.h in Headers */,
+				130B2C2D12C4F41100444AC7 /* config.h in Headers */,
+				130B2C2F12C4F41100444AC7 /* feature.h in Headers */,
+				130B2C3012C4F41100444AC7 /* freelist.h in Headers */,
+				130B2C3212C4F41100444AC7 /* mmap.h in Headers */,
+				130B2C3412C4F41100444AC7 /* param.h in Headers */,
+				130B2C3612C4F41100444AC7 /* scoped_ptr.h in Headers */,
+				130B2C3812C4F41100444AC7 /* sexp.h in Headers */,
+				130B2C3912C4F41100444AC7 /* stream_wrapper.h in Headers */,
+				130B2C3B12C4F41100444AC7 /* svm.h in Headers */,
+				130B2C4012C4F41100444AC7 /* zinnia.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* zinnia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "zinnia" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zinnia;
+			productName = zinnia;
+			productReference = D2AAC07E0554694100DB518D /* libzinnia.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "zinnia" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* zinnia */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* zinnia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				130B2C2B12C4F41100444AC7 /* character.cpp in Sources */,
+				130B2C2E12C4F41100444AC7 /* feature.cpp in Sources */,
+				130B2C3112C4F41100444AC7 /* libzinnia.cpp in Sources */,
+				130B2C3312C4F41100444AC7 /* param.cpp in Sources */,
+				130B2C3512C4F41100444AC7 /* recognizer.cpp in Sources */,
+				130B2C3712C4F41100444AC7 /* sexp.cpp in Sources */,
+				130B2C3A12C4F41100444AC7 /* svm.cpp in Sources */,
+				130B2C3C12C4F41100444AC7 /* trainer.cpp in Sources */,
+				130B2C3D12C4F41100444AC7 /* zinnia_convert.cpp in Sources */,
+				130B2C3E12C4F41100444AC7 /* zinnia_learn.cpp in Sources */,
+				130B2C3F12C4F41100444AC7 /* zinnia.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/zinnia.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = zinnia_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = zinnia;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/zinnia.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = zinnia_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = zinnia;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "zinnia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "zinnia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
