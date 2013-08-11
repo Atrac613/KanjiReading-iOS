@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "HandwritingResult.h"
+#import "DetailViewController.h"
 
 @interface MasterViewController () {
     
@@ -35,9 +36,15 @@
 {
     [super viewDidLoad];
     
+    [self.navigationItem setTitle:NSLocalizedString(@"KANJIREADING", @"")];
+    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Clear" style:UIBarButtonItemStylePlain target:self action:@selector(clearButtonPressed:)];
     
-    [self.navigationItem setTitle:@"Kanji Reading"];
+    UIButton *aboutButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    [aboutButton addTarget:self action:@selector(aboutButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    CGRect frame = aboutButton.frame;
+    [aboutButton setFrame:CGRectMake(frame.origin.x, frame.origin.y, 40, frame.size.height)];
+    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:aboutButton]];
     
     self.queue = [[NSOperationQueue alloc] init];
 	[queue setMaxConcurrentOperationCount:1];
@@ -63,6 +70,10 @@
     
     results = nil;
     [tableView reloadData];
+}
+
+- (void)aboutButtonPressed {
+    [self performSegueWithIdentifier:@"AboutViewFromMasterView" sender:self];
 }
 
 #pragma mark - Touches
@@ -155,6 +166,12 @@
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tv deselectRowAtIndexPath:indexPath animated:YES];
+    
+    ATCharacter *result = [results objectAtIndex:indexPath.row];
+    
+    DetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    detailViewController.character = result;
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 @end
