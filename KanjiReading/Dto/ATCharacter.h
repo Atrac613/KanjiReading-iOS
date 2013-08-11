@@ -1,5 +1,5 @@
 //
-//  ATKanjiReading.h
+//  ATCharacter.h
 //  KanjiReading
 //
 //  Created by Osamu Noguchi on 8/10/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ATKanjiReading : NSObject {
+@interface ATCharacter : NSObject {
     NSString *character;
     NSString *oldCharacter;
     NSInteger totalStrokes;

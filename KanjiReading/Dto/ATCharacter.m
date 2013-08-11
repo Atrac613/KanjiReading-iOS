@@ -1,14 +1,14 @@
 //
-//  ATKanjiReading.m
+//  ATCharacter.m
 //  KanjiReading
 //
 //  Created by Osamu Noguchi on 8/10/13.
 //  Copyright (c) 2013 Osamu Noguchi. All rights reserved.
 //
 
-#import "ATKanjiReading.h"
+#import "ATCharacter.h"
 
-@implementation ATKanjiReading
+@implementation ATCharacter
 
 @synthesize character;
 @synthesize oldCharacter;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "HandwritingRecognizer.h"
-#import "ATKanjiReadingDao.h"
+#import "ATJoyoKanjiDao.h"
 
 @interface MasterViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     IBOutlet UIImageView *canvas;
@@ -19,7 +19,7 @@
 	NSMutableArray *points;
 	HandwritingRecognizer *recognizer;
     
-    ATKanjiReadingDao *kanji;
+    ATJoyoKanjiDao *kanji;
     NSArray *results;
 }
 
@@ -29,7 +29,7 @@
 @property (nonatomic) CGPoint touchPoint;
 @property (strong, nonatomic) NSMutableArray *points;
 @property (strong, nonatomic) HandwritingRecognizer *recognizer;
-@property (strong, nonatomic) ATKanjiReadingDao *kanji;
+@property (strong, nonatomic) ATJoyoKanjiDao *kanji;
 @property (strong, nonatomic) NSArray *results;
 
 - (IBAction)clearButtonPressed:(id)sender;

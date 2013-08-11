@@ -8,7 +8,6 @@
 
 #import "MasterViewController.h"
 #import "HandwritingResult.h"
-#import "ATKanjiReadingDao.h"
 
 @interface MasterViewController () {
     
@@ -44,7 +43,7 @@
 	[queue setMaxConcurrentOperationCount:1];
 	self.recognizer = [[HandwritingRecognizer alloc] initWithCanvas:canvas];
     
-    self.kanji = [[ATKanjiReadingDao alloc] init];
+    self.kanji = [[ATJoyoKanjiDao alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -113,9 +112,9 @@
 				for (int i = 0; i < [_results count]; i++) {
 					HandwritingResult *result = [_results objectAtIndex:i];
                     
-                    ATKanjiReading *kanjiData = [kanji getData:result.value];
-                    if (kanjiData) {
-                        [tmpArray addObject:kanjiData];
+                    ATCharacter *character = [kanji getData:result.value];
+                    if (character) {
+                        [tmpArray addObject:character];
                     }
 				}
                 
@@ -145,7 +144,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
-    ATKanjiReading *result = [results objectAtIndex:indexPath.row];
+    ATCharacter *result = [results objectAtIndex:indexPath.row];
     
     NSString *text = [NSString stringWithFormat:@"%@ - %@", result.character, result.reading];
     

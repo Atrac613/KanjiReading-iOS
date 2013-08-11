@@ -1,5 +1,5 @@
 //
-//  ATKanjiReadingDao.h
+//  ATJoyoKanjiDao.h
 //  KanjiReading
 //
 //  Created by Osamu Noguchi on 8/10/13.
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "ATBaseDao.h"
-#import "ATKanjiReading.h"
+#import "ATCharacter.h"
 
-@interface ATKanjiReadingDao : ATBaseDao
+@interface ATJoyoKanjiDao : ATBaseDao
 
-- (ATKanjiReading *)getData:(NSString *)character;
+- (ATCharacter *)getData:(NSString *)character;
 - (NSString *)getReading:(NSString *)character;
 
 @end
