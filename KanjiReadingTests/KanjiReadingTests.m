@@ -24,9 +24,11 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testGetCharacter
 {
-    //STFail(@"Unit tests are not implemented yet in KanjiReadingTests");
+    ATJoyoKanjiDao *test = [[ATJoyoKanjiDao alloc] init];
+    
+    STAssertNotNil([test getReading:@"一"], @"Character not found.");
 }
 
 @end

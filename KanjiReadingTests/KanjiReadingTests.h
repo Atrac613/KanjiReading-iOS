@@ -7,6 +7,7 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "ATJoyoKanjiDao.h"
 
 @interface KanjiReadingTests : SenTestCase
 
