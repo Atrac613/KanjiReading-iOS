@@ -1,6 +1,6 @@
 ## KanjiReading for iOS
 
-Kanji reading app.
+![Screen Recording](screen_recording.gif)
 
 ## Code Status
 
