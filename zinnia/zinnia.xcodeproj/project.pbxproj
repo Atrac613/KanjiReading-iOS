@@ -251,6 +251,7 @@
 				GCC_PREFIX_HEADER = zinnia_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = zinnia;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -265,6 +266,7 @@
 				GCC_PREFIX_HEADER = zinnia_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = zinnia;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -280,6 +282,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -294,6 +297,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
