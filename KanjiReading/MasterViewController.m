@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 #import "HandwritingResult.h"
 #import "DetailViewController.h"
+#import "CharacterCell.h"
 
 @interface MasterViewController () {
     
@@ -150,16 +151,17 @@
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
+    CharacterCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = [[CharacterCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
     ATCharacter *result = [results objectAtIndex:indexPath.row];
     
-    NSString *text = [NSString stringWithFormat:@"%@ - %@", result.character, result.reading];
+    [cell.characterLabel setText:result.character];
+    [cell.characterLabel sizeToFit];
     
-    [cell.textLabel setText:text];
+    [cell.characterReadingLabel setText:result.reading];
     
     return cell;
 }

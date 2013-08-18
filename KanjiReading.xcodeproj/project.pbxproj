@@ -18,6 +18,7 @@
 		061B837117B7CA54002AA13D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 061B836F17B7CA54002AA13D /* Localizable.strings */; };
 		061B837417B7CBC5002AA13D /* ThirdPartyNoticesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061B837317B7CBC5002AA13D /* ThirdPartyNoticesViewController.m */; };
 		061B837617B7CCC8002AA13D /* third_party_notices.html in Resources */ = {isa = PBXBuildFile; fileRef = 061B837517B7CCC8002AA13D /* third_party_notices.html */; };
+		065EE4F117C10C7E00032FA8 /* CharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 065EE4F017C10C7E00032FA8 /* CharacterCell.m */; };
 		0682E31B17B6352A00286F59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0682E31A17B6352A00286F59 /* UIKit.framework */; };
 		0682E31D17B6352A00286F59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0682E31C17B6352A00286F59 /* Foundation.framework */; };
 		0682E31F17B6352A00286F59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0682E31E17B6352A00286F59 /* CoreGraphics.framework */; };
@@ -81,6 +82,8 @@
 		061B837217B7CBC5002AA13D /* ThirdPartyNoticesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartyNoticesViewController.h; sourceTree = "<group>"; };
 		061B837317B7CBC5002AA13D /* ThirdPartyNoticesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyNoticesViewController.m; sourceTree = "<group>"; };
 		061B837517B7CCC8002AA13D /* third_party_notices.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = third_party_notices.html; sourceTree = SOURCE_ROOT; };
+		065EE4EF17C10C7E00032FA8 /* CharacterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterCell.h; path = Cell/CharacterCell.h; sourceTree = "<group>"; };
+		065EE4F017C10C7E00032FA8 /* CharacterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterCell.m; path = Cell/CharacterCell.m; sourceTree = "<group>"; };
 		0682E31717B6352A00286F59 /* KanjiReading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0682E31A17B6352A00286F59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0682E31C17B6352A00286F59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -178,6 +181,15 @@
 			name = ja.lproj;
 			sourceTree = "<group>";
 		};
+		065EE4ED17C10C3E00032FA8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				065EE4EF17C10C7E00032FA8 /* CharacterCell.h */,
+				065EE4F017C10C7E00032FA8 /* CharacterCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		0682E30E17B6352A00286F59 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +231,7 @@
 		0682E32017B6352A00286F59 /* KanjiReading */ = {
 			isa = PBXGroup;
 			children = (
+				065EE4ED17C10C3E00032FA8 /* Cell */,
 				061B836117B7C604002AA13D /* Segue */,
 				06C224C717B6792F00CE7F1E /* Dto */,
 				06C224BE17B6761000CE7F1E /* Dao */,
@@ -496,6 +509,7 @@
 				061B836617B7C604002AA13D /* FlipFromLeftSegue.m in Sources */,
 				061B836717B7C604002AA13D /* FlipFromRightSegue.m in Sources */,
 				061B837417B7CBC5002AA13D /* ThirdPartyNoticesViewController.m in Sources */,
+				065EE4F117C10C7E00032FA8 /* CharacterCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
